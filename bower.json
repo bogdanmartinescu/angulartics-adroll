@@ -1,0 +1,15 @@
+{
+    "name": "angulartics-adroll",
+    "main": "./dist/angulartics-adroll.min.js",
+    "dependencies": {
+        "angulartics": "^1.0.0"
+    },
+    "ignore": [
+        "**/.*",
+        "bower_components",
+        "node_modules",
+        "example",
+        "package.json",
+        "lib/index.js"
+    ]
+}
