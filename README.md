@@ -52,6 +52,10 @@ angular.module('myApp', [
 
 Documentation is available on the [Angulartics site](http://luisfarzati.github.io/angulartics).
 
+## Create Adroll segments
+
+![alt tag](https://help.adroll.com/hc/en-us/article_attachments/204501457/audience_fixed_segment_en-us.gif)
+
 ## Development
 
 ```shell
