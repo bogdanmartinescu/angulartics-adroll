@@ -2,10 +2,18 @@
   "name": "angulartics-adroll",
   "version": "1.0.0",
   "description": "Adroll plugin for Angulartics",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "clean": "rm -rf dist",
+    "prebuild": "npm run clean",
+    "build": "mkdir -p dist && uglifyjs lib/angulartics-chartbeat.js --compress --source-map dist/angulartics-chartbeat.min.js.map --source-map-root .. --source-map-url ../dist/angulartics-chartbeat.min.js.map -o dist/angulartics-chartbeat.min.js"
   },
   "author": "Bogdan M <liviu.bogdan.martinescu@gmail.com> (http://mlb.ro/)",
-  "license": "ISC"
+  "license": "MIT",
+  "peerDependencies": {
+  "angulartics": "^1.0.0"
+},
+"devDependencies": {
+  "uglify-js": "^2.4.23"
+}
 }
