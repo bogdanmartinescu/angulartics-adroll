@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/angulartics/1.4.0/angulartics.min.js"></script>
-    <script src="/lib/angulartics-adroll.js"></script>
+    <script src="/dist/angulartics-adroll.min.js"></script>
     <script>
         var _sf_startpt = (new Date()).getTime()
     </script>
@@ -17,13 +17,12 @@
 
     <div class="navbar navbar-default">
         <div class="navbar-header">
-            <a class="navbar-brand" href="#/">My App</a>
+            <a class="navbar-brand" href="#/">Adroll Demo</a>
         </div>
         <div>
             <ul class="nav navbar-nav">
                 <li><a href="#/a">Page A</a></li>
                 <li><a href="#/b">Page B</a></li>
-                <li><a href="#/c">Page C</a></li>
             </ul>
         </div>
     </div>
@@ -45,7 +44,7 @@
         <hr>
 
         <p class="alert alert-success">
-            Open the network inspector in your browser, click any of the nav options or buttons above and you'll see the analytics request being executed. Then check <a class="alert-link" href="http://chartbeat.com/dashboard">your Chartbeat dashboard</a>.
+            Open the network inspector in your browser, click any of the nav options or buttons above and you'll see the analytics request being executed..
         </p>
     </div>
 
@@ -59,21 +58,20 @@
                     })
                     .when('/a', {
                         template: '<h1>Page "A"</h1>',
-                        controller: 'SampleCtrl'
+                        controller: 'PageACtrl'
                     })
                     .when('/b', {
                         template: '<h1>Page "B"</h1>',
-                        controller: 'SampleCtrl'
-                    })
-                    .when('/c', {
-                        template: '<h1>Page "C"</h1>',
-                        controller: 'SampleCtrl'
+                        controller: 'PageBCtrl'
                     })
                     .otherwise({
                         redirectTo: '/'
                     });
             })
-            .controller('SampleCtrl', function() {});
+            .controller('SampleCtrl', function() {})
+            .controller('PageACtrl', function() {})
+            .controller('PageBCtrl', function() {});
+
     </script>
     <script>
         adroll_adv_id = "5OIOCR3H7JH5HLXMJPAOOX";
