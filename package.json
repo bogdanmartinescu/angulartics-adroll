@@ -4,7 +4,7 @@
   "description": "Adroll plugin for Angulartics",
   "main": "lib/index.js",
   "scripts": {
-    "start": "live-server index.html",
+    "start": "live-server public/index.html",
     "clean": "rm -rf dist",
     "prebuild": "npm run clean",
     "build": "mkdir -p dist && uglifyjs lib/angulartics-adroll.js --compress --source-map dist/angulartics-adroll.min.js.map --source-map-root .. --source-map-url ../dist/angulartics-adroll.min.js.map -o dist/angulartics-adroll.min.js"
