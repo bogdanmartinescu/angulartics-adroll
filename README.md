@@ -4,6 +4,8 @@ Adroll plugin for [Angulartics](http://github.com/luisfarzati/angulartics).
 
 ## Install
 
+[![NPM](https://nodei.co/npm/angulartics-adroll.png)](https://nodei.co/npm/angulartics-adroll/)
+
 First make sure you've read installation and setup instructions for [Angulartics](https://github.com/luisfarzati/angulartics#install).
 
 Then you can install this package either with `npm` or with `bower`.
