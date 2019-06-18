@@ -1,5 +1,6 @@
 {
     "name": "angulartics-adroll",
+    "version": "1.0.6",
     "main": "./dist/angulartics-adroll.min.js",
     "dependencies": {
         "angulartics": "^1.0.0"
