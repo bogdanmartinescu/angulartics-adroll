@@ -50,13 +50,25 @@ angular.module('myApp', [
 ]);
 ```
 
-## Documentation
-
-Documentation is available on the [Angulartics site](http://luisfarzati.github.io/angulartics).
-
 ## Create Adroll segments
 
 ![alt tag](https://help.adroll.com/hc/en-us/article_attachments/204501457/audience_fixed_segment_en-us.gif)
+
+## Track Adroll segments (programmatically)
+
+After creating  Adroll segment, you will get its `segmentId` (e.g. `'d531a9dd'`).
+
+Now you can track the event programmatically.
+
+```javascript
+module.controller('SampleCtrl', function ($analytics) {
+  $analytics.eventTrack(null, { segments: 'd531a9dd' });
+});
+```
+
+## Documentation
+
+Documentation is available on the [Angulartics site](https://angulartics.github.io/).
 
 ## Development
 
